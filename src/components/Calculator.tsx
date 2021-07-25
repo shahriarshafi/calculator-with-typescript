@@ -19,6 +19,9 @@ const Calculator = () => {
             <Grid>
                 <Button label="AC" position={[0,0]} width={2} />
                 <Button label="OOPS" position={[2,0]} width={2}  />
+                <Button label="+" position={[3,1]} />
+                <Button label="-" position={[3,2]} />
+                <Button label="=" position={[3,3]} height={2}/>
                 <Button label="9" position={[0,1]} />
                 <Button label="8" position={[1,1]} />
                 <Button label="7" position={[2,1]} />
@@ -28,6 +31,7 @@ const Calculator = () => {
                 <Button label="3" position={[0,3]} />
                 <Button label="2" position={[1,3]} />
                 <Button label="1" position={[2,3]} />
+                <Button label="0" position={[0,4]} width={3} />
 
             </Grid>
         </Container>

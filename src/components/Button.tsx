@@ -6,6 +6,7 @@ type Props = {
     label: string;
     position?: [x: number, y: number];
     width?: number;
+    height?: number;
 }
 
 const StyledButton = styled.button`
@@ -15,7 +16,7 @@ const StyledButton = styled.button`
  font-size: 24px;
 `;
 
-const Button: React.FC<Props> = ({ label, position, width }) => {
+const Button: React.FC<Props> = ({ label, position, width, height }) => {
 
     const styles: React.CSSProperties = {};
     if (position) {
@@ -24,6 +25,9 @@ const Button: React.FC<Props> = ({ label, position, width }) => {
     }
     if(width){
         styles.gridColumnEnd = `span ${width}`;
+    }
+    if(height){
+        styles.gridRowEnd =`span ${height}`
     }
 
 
