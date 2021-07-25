@@ -24,6 +24,8 @@ const StyledButton = styled.button`
  font-size: 24px;
 `;
 
+console.log(type);
+
 const Button: React.FC<Props> = ({ label, position, width, height , type = ButtonType.Operation }) => {
 
     const styles: React.CSSProperties = {};

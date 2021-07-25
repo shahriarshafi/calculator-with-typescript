@@ -25,10 +25,11 @@ const Calculator = () => {
     justify-content: flex-end;
     `;
 
+
     return (
         <Container>
             <Grid>
-                <Display>42</Display>
+                <Display></Display>
                 <Button label="AC" position={[0, 1]} width={2} />
                 <Button label="OOPS" position={[2, 1]} width={2} />
                 <Button label="+" position={[3, 2]} />
