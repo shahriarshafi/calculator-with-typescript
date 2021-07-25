@@ -22,5 +22,9 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "Styled component" : {
+    "prefix" : "sty",
+    "body" : ["`const $1 = styled.div`" , " $2" , "`:"]
+  }
 }
